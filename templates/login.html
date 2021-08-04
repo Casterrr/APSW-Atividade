@@ -14,52 +14,85 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../static/dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-color: rgb(32, 26, 43);">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>Admin</b>LTE</a>
+    <a href="#" style="color: white;"><b style="color: rgb(88, 88, 255);">Store</b><b style="color: rgb(74, 255, 89);">Stock</b>MGR</a>
   </div>
   <!-- /.login-logo -->
-  <div class="card">
-    <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
-
+  <div class="card" style="border-radius: 15px;">
+    <div 
+      class="card-body login-card-body" 
+      style="background-color: rgb(46, 46, 88); color: white; border-radius: 10px;">
+      <p class="login-box-msg">Por favor, preencha os campos abaixo</p>
+      
       <form action="/home" method="#">
+        
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+              <span class="fas fa-envelope" style="color: rgb(74, 255, 89);"></span>
             </div>
           </div>
         </div>
+        
         <div class="input-group mb-3">
           <input type="password" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-lock"></span>
+              <span class="fas fa-lock" style="color: rgb(74, 255, 89);"></span>
             </div>
           </div>
         </div>
+        
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Confirmar senha">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-check" style="color: rgb(74, 255, 89);"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="gerente">
+              <label for="gerente">
+                Sou gerente
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
-                Remember Me
+                Salvar login
               </label>
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button 
+              type="submit" 
+              class="btn btn-primary btn-block" 
+              >Logar
+              
+            </button>
           </div>
-          <!-- /.col -->
         </div>
       </form>
 
       <p class="mb-0">
-        <a href="/register" class="text-center">Register a new membership</a>
+        <a 
+          href="/register" 
+          class="text-center" 
+          style="text-decoration: underline; color: white;">Cadastrar um novo funcionário</a>
       </p>
     </div>
     <!-- /.login-card-body -->
